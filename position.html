@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style type="text/css">
+    body {
+      height: 4000px;
+    }
+    .to_top {
+      position: fixed;
+      bottom: 50px;
+      right: 50px;
+    }
+    .position_me {
+      position: absolute;
+      bottom: 2px;
+      left: 50px;
+      background-color: red;
+    }
+    .parent {
+      position: relative;
+      height: 200px;
+      width: 400px;
+      border: 1px solid green;
+    }
+
+    section {
+      height: 400px;
+      border: 1px solid green;
+    }
+
+    .el {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      border: 1px solid red;
+    }
+    .el_1 {
+      top: 40px;
+      right: 70px;
+      background-color: rgba(216, 114, 103, 0.5);
+      z-index: 10;
+    }
+    .el_2 {
+      top: 30px;
+      right: 100px;
+      background-color: purple;
+      z-index: 1;
+    }
+  </style>
+  <script src="jquery2.min.js"></script>
+  <script src="position.js"></script>
+</head>
+<body>
+
+<div class="el el_1">text</div>
+<div class="el el_2"></div>
+
+<ul>
+  <li><a href="#section_1" class="scroll_to">Go to section 1</a></li>
+  <li><a href="#section_2" class="scroll_to">Go to section 2</a></li>
+  <li><a href="#section_3" class="scroll_to">Go to section 3</a></li>
+</ul>
+<a href="#" class="scroll_to to_top">back to top</a>
+<p>text</p>
+<p>text</p>
+<div class="parent">
+  <p>fsdfsdfsdfsdf</p>
+  <p>fsdfsdfsdfsdf</p>
+  <div class="position_me">position me</div>
+</div>
+<p>text</p>
+<p>text</p>
+
+<section id="section_1">
+  content 1
+</section>
+
+<section id="section_2">
+  content 2
+</section>
+
+<section id="section_3">
+  content 3
+</section>
+</body>
+</html>
