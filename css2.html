@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style type="text/css">
+    .my_special_block p {
+      color: red;
+    }
+
+    .my_special_block p strong {
+      color: green;
+    }
+    .my_special_block > p {
+      color: yellow;
+    }
+    .some_other_class.my_special_block {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+
+<p>text 1</p>
+
+<p>text 2</p>
+
+<div class="my_special_block some_other_class">
+  <div>
+    <p>text 4</p>
+  </div>
+  <p>text 3 <strong>some other text</strong></p>
+</div>
+</body>
+</html>
